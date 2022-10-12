@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+header{
+    display: flex;
+    padding: 20px;
+}
+#header-container { 
+    position: absolute;
+    right: 5%;
+}
+#logo{
+    margin: 0 10px;
+}
+#avatar{
+    width: 20px;
+    height: 20px;
+}
+#menu-svg {
+    padding: 4px 0;
+}
+#close-svg{
+    padding: 4px 0;
+}
+
+nav{
+    height: 100vh;
+    width: 70%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+.open-nav{
+    transform: translateX(0);
+}
+nav ul{
+    padding: 0;
+}
+nav ul li{
+    list-style: none;
+    padding: 10px 0;
+}
+nav ul li a{
+    text-decoration: none;
+}
