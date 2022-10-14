@@ -16,8 +16,12 @@ header{
     padding: 20px;
 }
 #header-container { 
-    position: absolute;
-    right: 5%;
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+#cart,#avatar {
+    padding: 0 5px;
 }
 #logo{
     margin: 0 10px;
