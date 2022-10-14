@@ -16,9 +16,8 @@ header{
     padding: 20px;
 }
 #header-container { 
-    display: flex;
-    justify-content: flex-end;
-    width: 50%;
+    position: absolute;
+    right: 5%;
 }
 #cart,#avatar {
     padding: 0 5px;
@@ -61,4 +60,37 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
+}
+
+#content{
+    padding: 0 20px;
+}
+#content span{
+    display: block;
+    font-size: small;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+#content h1{
+    margin: 10px 0;
+}
+#content #price{
+    display: flex;
+    justify-content: space-evenly;
+}
+#product-1{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+input{
+    width: 100%;
+    box-sizing: border-box;
+}
+button{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    margin: 10px 0;
 }
