@@ -22,6 +22,40 @@ header{
 #cart,#avatar {
     padding: 0 5px;
 }
+#basket{
+    position: absolute;
+    background-color: white;
+    top: 70px;
+    left: 7px;
+    right: 7px;
+    height: 260px;
+    border-radius: 5px;
+    display: none;
+    z-index: 3;
+}
+#basket div:first-child {
+    border-bottom:solid 1px rgb(207, 206, 206);
+}
+#basket div:first-child h3{
+    padding-left:20px;
+}
+#basket div:last-child{
+    text-align: center;
+}
+.cart-svg{
+    height: 18px;
+    width: 16px;
+    padding: 0px 10px;
+    vertical-align: middle;
+}
+#basket-filled{
+    display: flex;
+}
+#product-image-container img{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
 #logo{
     margin: 0 10px;
 }
@@ -61,11 +95,31 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
 }
-
+#image-container {
+    display: flex;
+}
+#previous,#next {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    padding: 8px;
+    margin-top: 45%;
+}
+#previous{
+    left: 15px;
+}
+#next{
+    right: 15px;
+}
+#product-1{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
 #content{
     padding: 0 20px;
 }
-#content span{
+#content h1 span{
     display: block;
     font-size: small;
     text-transform: uppercase;
@@ -74,23 +128,75 @@ nav ul li a{
 #content h1{
     margin: 10px 0;
 }
+#content #shoe-description{
+    color: gray;
+    font-size: 16px;
+}
 #content #price{
     display: flex;
-    justify-content: space-evenly;
+    align-self: flex-start;
+    gap: 10px;
 }
-#product-1{
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
+#content #price #current-price{
+    font-weight: bold;
+    font-size: 20px;
 }
+#content #price #discount{
+    background-color: rgb(239, 202, 209);
+    padding: 2px 4px;
+    border-radius: 5px;
+    color: rgb(249, 147, 4);
+}
+#content #price #original-price{
+    position: absolute;
+    text-decoration: line-through;
+    color: gray;
+    right: 21px;
+}
+
+#input-container{
+    display: flex;
+}
+#quantity-container{
+    text-align: center;
+    font-weight: bold;
+}
+#minus,#plus{
+    position: absolute;
+}
+#minus{
+    left: 35px;
+    margin-top: 20px;
+}
+#plus{
+    right: 35px;
+    margin-top: 15px;
+}
+
 input{
     width: 100%;
+    height: 40px;
     box-sizing: border-box;
+    border: none;
+    background-color: gainsboro;
+    border-radius: 5px;
 }
 button{
     display: block;
     width: 100%;
+    height: 40px;
+    background-color: rgb(249, 147, 4);
+    color: white;
     box-sizing: border-box;
     border: none;
+    border-radius: 5px;
     margin: 10px 0;
+   
 }
+#button-container {
+    padding-right: 10px;
+}
+button span {
+    vertical-align: middle;
+}
+
